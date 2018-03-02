@@ -8,7 +8,7 @@ describe "artists", type:  :feature do
     @grid = @artist.songs.create!(title: "The Grid")
     @voyager = @artist.songs.create!(title: "Voyager")
   end
-
+#
   it "links to the artist's songs by title" do
     visit artist_path(@artist)
     expect(page).to have_link("The Grid", href: song_path(@grid))
