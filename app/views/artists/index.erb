@@ -1,0 +1,11 @@
+<h1>Artists</h1>
+
+<ul>
+  <% @artists.each do |a| %>
+    <li>
+      <%= a.name %>
+      (<%= a.songs.length %> <%= "song".pluralize(a.songs.length) %>)
+    </li>
+
+  <% end %>
+</ul>
